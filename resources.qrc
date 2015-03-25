@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>telecom.png</file>
+        <file>lightbulb.png</file>
+    </qresource>
+</RCC>
