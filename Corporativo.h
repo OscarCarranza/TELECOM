@@ -19,5 +19,6 @@ public:
 	void agregarLinea();
 	void crearLineas();
 	void verLineas();
+    virtual string code()=0;
 };
 #endif

@@ -7,6 +7,7 @@
 class Prepago: public Particulares{
 	bool paquete_internet;
 	double saldo_disponible;
+    string cod;
 public:
 	Prepago(string,string,string,unsigned int,unsigned int,bool,double);
 	Prepago(const Prepago&);
@@ -14,5 +15,6 @@ public:
 	double getSaldoDisponible()const;
 	void ingresarRecarga(double);
     string type()const;
+    virtual string code();
 };
 #endif

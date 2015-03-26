@@ -14,6 +14,7 @@ public:
 	Cliente(const Cliente&);
 	virtual string toString()const;
     virtual string type()const;
+    virtual string code()=0;
 };
 
 #endif

@@ -46,3 +46,12 @@ using namespace std;
         ss << Cliente::type();
         return ss.str();
     }
+
+    string code(){
+        srand(time(0));
+        int cod = rand()% 10;
+        stringstream ss;
+        ss << "COR" << cod;
+        return ss.str();
+    }
+

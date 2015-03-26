@@ -7,10 +7,12 @@
 class Empresas:public Corporativo{
 	string tipo;
 	double fac_mensual;
+    string cod;
 public:
 	Empresas(string,string,string,unsigned int,int,string,string,string,double);
 	Empresas(const Empresas&);
 	string toString()const;
     string type()const;
+    virtual string code();
 };
 #endif

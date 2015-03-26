@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>377</width>
-    <height>223</height>
+    <height>228</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
   </property>
   <widget class="QPushButton" name="BClientes">
    <property name="geometry">
@@ -21,6 +24,14 @@
      <width>131</width>
      <height>27</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
    </property>
    <property name="text">
     <string>Agregar Clientes</string>
@@ -112,7 +123,36 @@
     <string>Eliminar Clientes</string>
    </property>
   </widget>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>391</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/telecom.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>BClientes</zorder>
+  <zorder>BFac</zorder>
+  <zorder>BSalir</zorder>
+  <zorder>BVentas</zorder>
+  <zorder>label</zorder>
+  <zorder>BListar</zorder>
+  <zorder>Delete</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -7,6 +7,7 @@
 class Postpago: public Particulares{
 	string ultimo_pago, fecha_corte;
 	double fac_consumo;
+    string cod;
 public:
 	Postpago(string,string,string,unsigned int,unsigned int,double,string,string);
 	Postpago(const Postpago&);
@@ -17,5 +18,6 @@ public:
 	double getFacturaConsumo()const;
     void setFacturaConsumo(double);
     string type()const;
+    virtual string code();
 };
 #endif

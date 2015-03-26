@@ -6,6 +6,8 @@
 #include "remove.h"
 #include "facturar.h"
 #include "sales.h"
+#include <QPixmap>
+#include <QPalette>
 
 menu::menu(QWidget *parent) :
     QDialog(parent),
@@ -13,11 +15,6 @@ menu::menu(QWidget *parent) :
 {
 
     ui->setupUi(this);
-    QPixmap bkgnd(":/telecom.png");
-    bkgnd = bkgnd.scaled(this->size(),Qt::IgnoreAspectRatio);
-    QPalette palette;
-    palette.setBrush(QPalette::Background,bkgnd);
-    this->setPalette(palette);
     clientes = new vector <Cliente*>;
     ventas = new vector <Venta*>;   
 
@@ -25,6 +22,7 @@ menu::menu(QWidget *parent) :
 
 menu::~menu()
 {
+
     delete ui;
 }
 

@@ -2,7 +2,9 @@
 #include "Particulares.h"
 #include <string>
 #include <sstream>
-#include <iostream>;
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
 
 using std::string;
 using std::stringstream;
@@ -32,4 +34,13 @@ using std::endl;
         ss << Cliente::type();
         return ss.str();
     }
+
+    string Particulares::code(){
+        srand(time(0));
+        int cod = rand()% 10;
+        stringstream ss;
+        ss << "PAR" << cod;
+        return ss.str();
+    }
+
 
