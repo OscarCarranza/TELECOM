@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>377</width>
-    <height>251</height>
+    <height>223</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,24 +26,11 @@
     <string>Agregar Clientes</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="BRecarga">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>160</y>
-     <width>131</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Ingresar Recarga</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="BFac">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>200</y>
+     <y>160</y>
      <width>131</width>
      <height>27</height>
     </rect>
@@ -56,7 +43,7 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>200</y>
+     <y>160</y>
      <width>131</width>
      <height>27</height>
     </rect>
@@ -69,26 +56,13 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>160</y>
-     <width>131</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Ventas</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="BListarLineas">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
      <y>120</y>
      <width>131</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>Listar Líneas</string>
+    <string>Ventas</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">

@@ -11,14 +11,16 @@ menu::menu(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::menu)
 {
+
     ui->setupUi(this);
-    clientes = new vector <Cliente*>;
-    ventas = new vector <Venta*>;
     QPixmap bkgnd(":/telecom.png");
     bkgnd = bkgnd.scaled(this->size(),Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background,bkgnd);
     this->setPalette(palette);
+    clientes = new vector <Cliente*>;
+    ventas = new vector <Venta*>;   
+
 }
 
 menu::~menu()

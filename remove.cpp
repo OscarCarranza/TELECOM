@@ -41,12 +41,13 @@ void Remove::on_pushButton_2_clicked()
 
 void Remove::on_pushButton_clicked()
 {
-    vector<Cliente*> clients = clientes[0];
+
     int del = ui->cbcli->currentIndex();
-    clients.erase(clients.begin()+(del-1));
+    clientes->erase(clientes->begin()+(del-1));
 
     QMessageBox msgbox;
     msgbox.setWindowTitle("Exito");
     msgbox.setInformativeText("Cliente Eliminado");
     msgbox.exec();
+    ui->cbcli->clear();
 }
