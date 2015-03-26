@@ -15,6 +15,7 @@ public:
 	string getFechaCorte()const;
 	void hacerPago(double);
 	double getFacturaConsumo()const;
-	void setFacturaConsumo(double);
+    void setFacturaConsumo(double);
+    string type()const;
 };
 #endif

@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     users = new vector <Usuario*>;
+    users->push_back(new Usuario("oscarncr","1234"));
     ui->setupUi(this);
     QImage Logo(":/lightbulb.png");
     ui->logo->setPixmap(QPixmap::fromImage(Logo));
@@ -32,9 +33,6 @@ void MainWindow::on_Blog_clicked()
     string user = ui->line_user->text().toStdString();
     string pass = ui->line_pass->text().toStdString();
 
-    if(users->size() == 0){
-        users->push_back(new Usuario("oscarncr","1234"));
-    }
     int cont = 0;
 
     for(unsigned i = 0; i < users->size(); i++){

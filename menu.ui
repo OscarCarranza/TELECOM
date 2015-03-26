@@ -17,20 +17,20 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>90</y>
+     <y>80</y>
      <width>131</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>Clientes</string>
+    <string>Agregar Clientes</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BRecarga">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>140</y>
+     <y>160</y>
      <width>131</width>
      <height>27</height>
     </rect>
@@ -43,7 +43,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>190</y>
+     <y>200</y>
      <width>131</width>
      <height>27</height>
     </rect>
@@ -56,33 +56,33 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>190</y>
+     <y>200</y>
      <width>131</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>Salir</string>
+    <string>Log Out</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Bblock">
+  <widget class="QPushButton" name="BVentas">
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>140</y>
+     <y>160</y>
      <width>131</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>Bloqueo de Línea</string>
+    <string>Ventas</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BListarLineas">
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>90</y>
+     <y>120</y>
      <width>131</width>
      <height>27</height>
     </rect>
@@ -110,6 +110,32 @@
    </property>
    <property name="text">
     <string>MENU PRINCIPAL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BListar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>131</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Listar Clientes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Delete">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>80</y>
+     <width>131</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Eliminar Clientes</string>
    </property>
   </widget>
  </widget>

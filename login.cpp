@@ -5,6 +5,8 @@
 #include <iostream>
 #include "Usuario.h"
 #include <vector>
+#include <QPixmap>
+#include <QPalette>
 
 using std::string;
 using std::vector;
@@ -19,6 +21,11 @@ Login::Login(vector<Usuario*>* u,QWidget *parent) :
 
     users=u;
     ui->setupUi(this);
+    QPixmap bkgnd(":/telecom.png");
+    bkgnd = bkgnd.scaled(this->size(),Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background,bkgnd);
+    this->setPalette(palette);
 }
 
 Login::~Login()
@@ -36,5 +43,5 @@ void Login::on_accept_clicked()
 
 void Login::on_pushButton_2_clicked()
 {
-
+    this->close();
 }

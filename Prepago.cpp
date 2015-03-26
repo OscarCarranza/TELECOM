@@ -22,9 +22,9 @@ using std::setprecision;
 
 	string Prepago::toString()const{
 		stringstream ss;
-		ss << "Particular Prepago: [";
-		ss << Particulares::toString() << ", Paquetes de Internet: " << ((paquete_internet)?"SI":"NO") << ", Saldo disponible: " 
-		<< setprecision(5) <<  saldo_disponible << "]";
+        ss << "Particular Prepago:";
+        ss << Particulares::toString() << "     Paquetes de Internet: " << ((paquete_internet)?"SI":"NO") << "\n     Saldo disponible: "
+        << setprecision(5) <<  saldo_disponible ;
 		return ss.str();
 	}
 
@@ -35,3 +35,9 @@ using std::setprecision;
 	void Prepago::ingresarRecarga(double saldo){
 		saldo_disponible += saldo;
 	}
+
+    string Prepago::type()const{
+        stringstream ss;
+        ss << "Prepago "<< Particulares::type() ;
+        return ss.str();
+    }

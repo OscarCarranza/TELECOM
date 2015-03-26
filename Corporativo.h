@@ -15,6 +15,7 @@ public:
 	Corporativo(string,string,string,unsigned int,int,string,string);
 	Corporativo(const Corporativo&);
 	virtual string toString()const = 0;
+    virtual string type()const=0;
 	void agregarLinea();
 	void crearLineas();
 	void verLineas();

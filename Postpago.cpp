@@ -20,9 +20,9 @@ using std::stringstream;
 
 	string Postpago::toString()const{
 		stringstream ss;
-		ss << "Particular Postpago: [";
-		ss << Particulares::toString() << " ,Consumo total: $ " << fac_consumo << ", Último pago realizado: " 
-		<< ultimo_pago << ", Fecha de Corte: " << fecha_corte << "]";
+        ss << "Particular Postpago:";
+        ss << Particulares::toString() << "     Consumo total: $ " << fac_consumo << "\n     Último pago realizado: "
+        << ultimo_pago << "\n     Fecha de Corte: " << fecha_corte ;
 		return ss.str();
 	}
 
@@ -45,3 +45,10 @@ using std::stringstream;
 	void Postpago::setFacturaConsumo(double fac_consumo){
 		this->fac_consumo += fac_consumo;
 	}
+
+    string Postpago::type()const{
+        stringstream ss;
+        ss << "Postpago " << Particulares::type();
+        return ss.str();
+    }
+

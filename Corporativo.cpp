@@ -21,8 +21,8 @@ using namespace std;
 
 	string Corporativo::toString()const{
 		stringstream ss;
-		ss << Cliente::toString()  << ", Número de Lineas: " << num_lineas << ", Nombre del Contacto: " << contact << 
-		"Puesto del Contacto: " << contact_job;
+        ss << Cliente::toString()  << "     Número de Lineas: " << num_lineas << "\n     Nombre del Contacto: " << contact <<
+        "\n     Puesto del Contacto: " << contact_job << endl;
 		return ss.str();
 	}
 
@@ -40,3 +40,9 @@ using namespace std;
 			lineas.push_back(line);
 		}
 	}
+
+    string Corporativo::type()const{
+        stringstream ss;
+        ss << Cliente::type();
+        return ss.str();
+    }

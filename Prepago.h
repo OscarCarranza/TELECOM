@@ -13,5 +13,6 @@ public:
 	virtual string toString()const;
 	double getSaldoDisponible()const;
 	void ingresarRecarga(double);
+    string type()const;
 };
 #endif

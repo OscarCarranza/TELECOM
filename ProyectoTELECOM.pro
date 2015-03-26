@@ -23,9 +23,13 @@ SOURCES += main.cpp\
     Prepago.cpp \
     Usuario.cpp \
     login.cpp \
+    dialogembong.cpp \
     menu.cpp \
-    clients.cpp \
-    dialogembong.cpp
+    list.cpp \
+    remove.cpp \
+    facturar.cpp \
+    venta.cpp \
+    sales.cpp
 
 HEADERS  += mainwindow.h \
     Cliente.h \
@@ -37,15 +41,22 @@ HEADERS  += mainwindow.h \
     Prepago.h \
     Usuario.h \
     login.h \
+    dialogembong.h \
     menu.h \
-    clients.h \
-    dialogembong.h
+    list.h \
+    remove.h \
+    facturar.h \
+    venta.h \
+    sales.h
 
 FORMS    += mainwindow.ui \
     login.ui \
+    dialogembong.ui \
     menu.ui \
-    clients.ui \
-    dialogembong.ui
+    list.ui \
+    remove.ui \
+    facturar.ui \
+    sales.ui
 
 RESOURCES += \
     resources.qrc

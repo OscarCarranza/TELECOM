@@ -14,5 +14,6 @@ public:
 	EmbajadaONG(string,string,string,unsigned int,int,string,string,int,string,int);
 	EmbajadaONG(const EmbajadaONG&);
 	string toString()const;
+    string type()const;
 };
 #endif

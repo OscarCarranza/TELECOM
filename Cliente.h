@@ -13,6 +13,7 @@ public:
 	Cliente(string,string,string,unsigned int);
 	Cliente(const Cliente&);
 	virtual string toString()const;
+    virtual string type()const;
 };
 
 #endif

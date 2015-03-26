@@ -1,6 +1,10 @@
 #ifndef MENU_H
 #define MENU_H
+#include "Cliente.h"
+#include "venta.h"
+#include <vector>
 
+using std::vector;
 #include <QDialog>
 
 namespace Ui {
@@ -20,8 +24,20 @@ private slots:
 
     void on_BClientes_clicked();
 
+    void on_AddCliente_clicked();
+
+    void on_BListar_clicked();
+
+    void on_Delete_clicked();
+
+    void on_BFac_clicked();
+
+    void on_BVentas_clicked();
+
 private:
     Ui::menu *ui;
+    vector <Cliente*>* clientes;
+    vector <Venta*>* ventas;
 };
 
 #endif // MENU_H
